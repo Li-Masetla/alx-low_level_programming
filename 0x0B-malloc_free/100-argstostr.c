@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
-* *argstostr - concatenates the arguments of my program
+* *argstostr - concatenates all the arguments of the program
 * @ac: number of arguments
 * @av: array of arguments
 *
-* Return: a pointer to a new string (Success), or null (error)
+* Return: Pointer to the new string (Success), NULL (Error)
 */
 char *argstostr(int ac, char **av)
 {
@@ -40,6 +40,6 @@ char *argstostr(int ac, char **av)
 		str[k] = '\n';
 		k++;
 	}
-
+	
 	return (str);
 }
